@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SICH REFLEXIVE VERBEN</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#b9c6d8;
+padding:40px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.title{
+font-size:40px;
+font-weight:bold;
+color:#1f3e7a;
+}
+
+.subtitle{
+color:#6b7a90;
+margin-top:8px;
+}
+
+.accordion{
+background:white;
+border-radius:12px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.accordion-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+}
+
+.accordion-title{
+font-size:28px;
+color:#1f3e7a;
+font-weight:bold;
+}
+
+.accordion-sub{
+color:#6b7a90;
+}
+
+.arrow{
+font-size:24px;
+transition:0.3s;
+}
+
+.content{
+margin-top:20px;
+display:none;
+}
+
+.question{
+background:#f3f6fb;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.words{
+font-size:18px;
+margin-bottom:10px;
+}
+
+input{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+margin-top:8px;
+}
+
+.correct{
+border:2px solid #2ecc71;
+background:#eafaf1;
+}
+
+.wrong{
+border:2px solid #e74c3c;
+background:#fdecea;
+}
+
+.button{
+margin-top:10px;
+padding:10px 18px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+color:white;
+box-shadow:0 4px 0 rgba(0,0,0,0.2);
+}
+
+.check{
+background:#3498db;
+}
+
+.reset{
+background:#f39c12;
+margin-left:10px;
+}
+
+.button:active{
+transform:translateY(2px);
+box-shadow:0 2px 0 rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<div class="card">
+<div class="title">SICH REFLEXIVE VERBEN</div>
+<div class="subtitle">Bilde die richtigen Sätze</div>
+</div>
+
+
+<!-- AUFGABE 1 -->
+<div class="accordion">
+
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Aufgabe 1 : Präsens</div>
+<div class="accordion-sub">8 Fragen</div>
+</div>
+<div class="arrow">▼</div>
+</div>
+
+<div class="content">
+
+<div class="question">
+<div class="words">sich interessieren | für | <b>Ich</b> | Deutsch | .</div>
+<input id="p1">
+<button class="button check" onclick="checkAnswer('p1','Ich interessiere mich für Deutsch.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p1')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich freuen | auf | <b>Wir</b> | Urlaub | .</div>
+<input id="p2">
+<button class="button check" onclick="checkAnswer('p2','Wir freuen uns auf Urlaub.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p2')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich erinnern | an | <b>Er</b> | Lehrer | .</div>
+<input id="p3">
+<button class="button check" onclick="checkAnswer('p3','Er erinnert sich an Lehrer.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p3')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich treffen | <b>Wir</b> | heute | .</div>
+<input id="p4">
+<button class="button check" onclick="checkAnswer('p4','Wir treffen uns heute.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p4')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich waschen | <b>Ich</b> | morgens | .</div>
+<input id="p5">
+<button class="button check" onclick="checkAnswer('p5','Ich wasche mich morgens.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p5')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich beeilen | <b>Du</b> | heute | .</div>
+<input id="p6">
+<button class="button check" onclick="checkAnswer('p6','Du beeilst dich heute.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p6')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich setzen | <b>Er</b> | hier | .</div>
+<input id="p7">
+<button class="button check" onclick="checkAnswer('p7','Er setzt sich hier.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p7')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich ärgern | über | <b>Sie</b> | Fehler | .</div>
+<input id="p8">
+<button class="button check" onclick="checkAnswer('p8','Sie ärgert sich über Fehler.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('p8')">↻ Neu starten</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- AUFGABE 2 -->
+<div class="accordion">
+
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Aufgabe 2 : Perfekt</div>
+<div class="accordion-sub">8 Fragen</div>
+</div>
+<div class="arrow">▼</div>
+</div>
+
+<div class="content">
+
+<div class="question">
+<div class="words">sich interessieren | für | <b>Ich</b> | Deutsch | .</div>
+<input id="pf1">
+<button class="button check" onclick="checkAnswer('pf1','Ich habe mich für Deutsch interessiert.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('pf1')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich freuen | auf | <b>Wir</b> | Urlaub | .</div>
+<input id="pf2">
+<button class="button check" onclick="checkAnswer('pf2','Wir haben uns auf Urlaub gefreut.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('pf2')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich erinnern | an | <b>Er</b> | Lehrer | .</div>
+<input id="pf3">
+<button class="button check" onclick="checkAnswer('pf3','Er hat sich an Lehrer erinnert.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('pf3')">↻ Neu starten</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- AUFGABE 3 -->
+<div class="accordion">
+
+<div class="accordion-header">
+<div>
+<div class="accordion-title">Aufgabe 3 : Modalverben</div>
+<div class="accordion-sub">8 Fragen</div>
+</div>
+<div class="arrow">▼</div>
+</div>
+
+<div class="content">
+
+<div class="question">
+<div class="words">sich beeilen | <b>Ich</b> | müssen | .</div>
+<input id="m1">
+<button class="button check" onclick="checkAnswer('m1','Ich muss mich beeilen.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('m1')">↻ Neu starten</button>
+</div>
+
+<div class="question">
+<div class="words">sich konzentrieren | <b>Du</b> | sollen | .</div>
+<input id="m2">
+<button class="button check" onclick="checkAnswer('m2','Du sollst dich konzentrieren.')">Antwort prüfen</button>
+<button class="button reset" onclick="resetAnswer('m2')">↻ Neu starten</button>
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+
+<script>
+
+const accordions=document.querySelectorAll(".accordion");
+
+accordions.forEach(acc=>{
+const header=acc.querySelector(".accordion-header");
+
+header.addEventListener("click",()=>{
+
+const content=acc.querySelector(".content");
+const arrow=acc.querySelector(".arrow");
+
+if(content.style.display==="block"){
+content.style.display="none";
+arrow.style.transform="rotate(0deg)";
+}else{
+content.style.display="block";
+arrow.style.transform="rotate(180deg)";
+}
+
+});
+});
+
+
+function checkAnswer(id,correct){
+
+let input=document.getElementById(id);
+
+if(input.value.trim().toLowerCase()===correct.toLowerCase()){
+input.classList.add("correct");
+input.classList.remove("wrong");
+}else{
+input.classList.add("wrong");
+input.classList.remove("correct");
+}
+
+}
+
+function resetAnswer(id){
+
+let input=document.getElementById(id);
+
+input.value="";
+input.classList.remove("correct");
+input.classList.remove("wrong");
+
+}
+
+</script>
+
+</body>
+</html>
